@@ -30,6 +30,24 @@ Key sections to focus on for financial data extraction:
 * Cash flow statement: This shows how changes to the balance sheet and income impact cash and cash equivalents.
 * Key data points: Cash from operating activities, investing activities, and financing activities.
 * Extraction technique: Analyze the cash flow statement to understand how the company generates and spends its cash. This can provide insights into a company's liquidity.
+
+## Chatbots
+For our financial chatbot, this means that the AI should understand and respond to queries about financial data in a way that feels natural and helpful.
+
+* Rule-based logic: Start by implementing rule-based responses. This means your chatbot will use predetermined responses to specific queries. Think of it as a sophisticated "if-then" logic: if the user asks "X," then the chatbot responds with "Y." This approach is ideal for handling frequently asked questions about financial data.
+
+* State management: Even in a simple chatbot, managing the conversation's state is important. This involves remembering the context of the conversation or the user's previous queries to make responses more relevant and personalized.
+
+* Error handling: Prepare your chatbot to handle unrecognized queries gracefully. It should inform users when it doesn't understand a question and guide them towards queries that it can respond to.
+
+## Techniques to integrate data 
+
+* Data structuring: Before integrating, ensure your financial data is structured in a way that allows your chatbot to access and interpret it easily. Using formats such as JSON or CSV can be helpful, as you can map data points to specific queries.
+
+* Retrieval methods: Implement simple retrieval methods that allow your chatbot to fetch the right piece of data based on the user's query. For instance, if a user asks about a company's net income, your chatbot should know how to find and present that specific data point.
+
+* Predefined data points: Since we're focusing on predefined queries, associate each query with specific data points in your data set. This direct mapping simplifies the process of fetching and presenting data in response to user inputs.
+
   
 ### What I learned?
 * Techniques for extracting key financial data from 10-K documents
